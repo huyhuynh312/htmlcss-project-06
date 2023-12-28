@@ -58,10 +58,21 @@ article {
     line-height: 62px;
     color: #fdfdfd;
     background: var(--primary-color);
+    transition: 0.25s;
 }
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.btn.btn--white {
+    background: #fff;
+    color: var(--second-primary-color);
+}
+
+.btn.btn--white:hover {
+    color: #fff;
+    background: #381ab7;
 }
 
 .section-heading {
@@ -129,6 +140,7 @@ article {
     font-weight: 500;
     line-height: 1.36;
     text-decoration-line: underline;
+    transition: 0.25s;
 }
 
 .header-contact__mail:hover {
@@ -154,6 +166,7 @@ article {
     color: var(--third-primary-color);
     font-size: 1.8rem;
     padding: 8px 21.5px;
+    transition: 0.25s;
 }
 
 .navbar__link:hover {
@@ -236,6 +249,7 @@ article {
     font-weight: 700;
     line-height: 1.67;
     text-decoration-line: underline;
+    transition: 0.25s;
 }
 
 .hero__link:hover {
@@ -269,6 +283,7 @@ article {
     height: 40px;
     border-radius: 50%;
     border: 1px solid #e3e1e8;
+    transition: 0.25s;
 }
 
 .hero-socials__link:hover {
@@ -351,6 +366,7 @@ article {
 .service-item {
     padding: 33px 43px;
     background: #fbfaff;
+    transition: 0.25s;
 }
 
 .service-item:hover {
@@ -359,6 +375,7 @@ article {
 
 .service-item__heading {
     margin-top: 22px;
+    transition: 0.25s;
 }
 
 .service-item__heading:hover {
@@ -367,4 +384,102 @@ article {
 
 .service-item__desc {
     margin-top: 15px;
+}
+
+/* Work */
+.work {
+    padding: 86px 0;
+    background: var(--primary-color);
+}
+
+.work__heading {
+    width: 468px;
+    color: #fff;
+}
+
+.work__desc {
+    margin: 31px 0 0 130px;
+    width: 370px;
+    color: rgb(255 255 255 / 70%);
+}
+
+.work-bottom {
+    margin-top: 70px;
+}
+
+.work-bottom__2 {
+    margin-top: 30px;
+}
+
+/* Work item */
+.work-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 23px 23px 34px;
+    background: #fbfaff;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+}
+
+.work-item::after {
+    position: absolute;
+    display: block;
+    content: url(../img/work-decor.png);
+    top: 0;
+    right: 0;
+}
+
+.work-item__heading {
+    font-weight: 600;
+}
+
+.work-item__heading:hover,
+.work-item__cta:hover {
+    color: var(--primary-color);
+}
+
+.work-item__desc {
+    width: 220px;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    line-height: 1.44;
+}
+
+.work-item__cta {
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--second-primary-color);
+    text-decoration-line: underline;
+}
+
+.work-item__media {
+    width: 245px;
+    overflow: hidden;
+}
+
+.work-item:hover .work-item__img {
+    transform: scale(1.1);
+}
+
+.work-item__img {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    transition: 0.25s;
+}
+
+.work-cta {
+    display: flex;
+    justify-content: center;
+}
+
+.work__btn {
+    margin-top: 80px;
 }

@@ -252,3 +252,46 @@ article {
     border-radius: 50%;
     border: 1px solid #e3e1e8;
 }
+
+/* Company */
+.company {
+    margin-top: 98px;
+    background: #fff;
+}
+
+.company__inner {
+    display: flex;
+    align-items: center;
+}
+
+.company__heading {
+    margin-left: 99px;
+    position: relative;
+    width: 253px;
+    color: var(--second-primary-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+}
+
+.company__heading::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: -99px;
+    top: 22px;
+    width: 86px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.company__list {
+    margin-left: 105px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px 54px;
+}
+
+.company-item__img {
+    display: block;
+}

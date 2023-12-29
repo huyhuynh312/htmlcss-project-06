@@ -621,7 +621,7 @@
             <!-- About -->
             <section class="about">
                 <div class="container">
-                    <!-- About top -->
+                    <!-- About info -->
                     <div class="about-info">
                         <div class="about__title-wrap">
                             <p class="about__title">Hey,,,,It’s Arif</p>
@@ -666,41 +666,203 @@
                                 </p>
                             </article>
                         </div>
+                    </div>
 
-                        <!-- About media -->
-                        <div class="about-media">
-                            <video
-                                id="video"
-                                controls
-                                playsinline
-                                loop
-                                src="./assets/video/video.mp4"
-                                class="about__video"
-                                poster="./assets/img/about-01.png"
+                    <!-- About media -->
+                    <div class="about-media">
+                        <video
+                            id="video"
+                            controls
+                            playsinline
+                            loop
+                            src="./assets/video/video.mp4"
+                            class="about__video"
+                            poster="./assets/img/about-01.png"
+                        >
+                            Your browser does not support the video tag.
+                        </video>
+                        <button id="play-btn" class="about__btn">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15"
+                                height="18"
+                                viewBox="0 0 15 18"
+                                fill="none"
+                                class="about__play"
                             >
-                                Your browser does not support the video tag.
-                            </video>
-                            <button id="play-btn" class="about__btn">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="15"
-                                    height="18"
-                                    viewBox="0 0 15 18"
-                                    fill="none"
-                                    class="about__play"
+                                <path
+                                    d="M14.4462 10.6965C14.3614 10.7835 14.0414 11.1555 13.7433 11.4615C11.9956 13.386 7.43643 16.536 5.05017 17.4975C4.68777 17.652 3.77155 17.979 3.28203 18C2.81296 18 2.36581 17.892 1.93911 17.673C1.40721 17.367 0.980516 16.8855 0.746712 16.317C0.596201 15.9225 0.362397 14.742 0.362397 14.721C0.128592 13.4295 0 11.331 0 9.012C0 6.8025 0.128592 4.7895 0.320019 3.4785C0.341939 3.4575 0.575743 1.9905 0.831466 1.488C1.30054 0.57 2.21676 0 3.19727 0H3.28203C3.9206 0.0225 5.26352 0.5925 5.26352 0.6135C7.52119 1.5765 11.9752 4.572 13.7652 6.5625C13.7652 6.5625 14.2694 7.074 14.4886 7.3935C14.8305 7.8525 15 8.421 15 8.9895C15 9.624 14.8086 10.215 14.4462 10.6965Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </button>
+                        <button id="intro" class="about__intro section-desc">
+                            Intro Video
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonal -->
+            <section class="testimonal">
+                <div class="container">
+                    <div class="testimonal__inner">
+                        <h2 class="testimonal__heading section-heading lv1">
+                            What people says
+                        </h2>
+                        <p class="testimonal__desc section-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+
+                        <!-- Testimonal list  -->
+                        <ul class="testimonal__list">
+                            <!-- Testimonal item 1 -->
+                            <li class="testimonal-item">
+                                <blockquote
+                                    class="testimonal-item__quote section-desc"
                                 >
-                                    <path
-                                        d="M14.4462 10.6965C14.3614 10.7835 14.0414 11.1555 13.7433 11.4615C11.9956 13.386 7.43643 16.536 5.05017 17.4975C4.68777 17.652 3.77155 17.979 3.28203 18C2.81296 18 2.36581 17.892 1.93911 17.673C1.40721 17.367 0.980516 16.8855 0.746712 16.317C0.596201 15.9225 0.362397 14.742 0.362397 14.721C0.128592 13.4295 0 11.331 0 9.012C0 6.8025 0.128592 4.7895 0.320019 3.4785C0.341939 3.4575 0.575743 1.9905 0.831466 1.488C1.30054 0.57 2.21676 0 3.19727 0H3.28203C3.9206 0.0225 5.26352 0.5925 5.26352 0.6135C7.52119 1.5765 11.9752 4.572 13.7652 6.5625C13.7652 6.5625 14.2694 7.074 14.4886 7.3935C14.8305 7.8525 15 8.421 15 8.9895C15 9.624 14.8086 10.215 14.4462 10.6965Z"
-                                        fill="currentColor"
-                                    />
-                                </svg>
-                            </button>
-                            <button
-                                id="intro"
-                                class="about__intro section-desc"
-                            >
-                                Intro Video
-                            </button>
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="testimonal-item__media">
+                                    <figure class="testimonal-item__img">
+                                        <img
+                                            src="./assets/img/testimonal-01.svg"
+                                            alt=""
+                                            class="testimonal-item__avatar"
+                                        />
+                                    </figure>
+                                    <figcaption class="testimonal-item__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </div>
+                                <p class="testimonal-item__desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </li>
+
+                            <!-- Testimonal item 2 -->
+                            <li class="testimonal-item">
+                                <blockquote
+                                    class="testimonal-item__quote section-desc"
+                                >
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="testimonal-item__media">
+                                    <figure class="testimonal-item__img">
+                                        <img
+                                            src="./assets/img/testimonal-01.svg"
+                                            alt=""
+                                            class="testimonal-item__avatar"
+                                        />
+                                    </figure>
+                                    <figcaption class="testimonal-item__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </div>
+                                <p class="testimonal-item__desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </li>
+
+                            <!-- Testimonal item 3 -->
+                            <li class="testimonal-item">
+                                <blockquote
+                                    class="testimonal-item__quote section-desc"
+                                >
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="testimonal-item__media">
+                                    <figure class="testimonal-item__img">
+                                        <img
+                                            src="./assets/img/testimonal-01.svg"
+                                            alt=""
+                                            class="testimonal-item__avatar"
+                                        />
+                                    </figure>
+                                    <figcaption class="testimonal-item__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </div>
+                                <p class="testimonal-item__desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </li>
+
+                            <!-- Testimonal item 4 -->
+                            <li class="testimonal-item">
+                                <blockquote
+                                    class="testimonal-item__quote section-desc"
+                                >
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="testimonal-item__media">
+                                    <figure class="testimonal-item__img">
+                                        <img
+                                            src="./assets/img/testimonal-01.svg"
+                                            alt=""
+                                            class="testimonal-item__avatar"
+                                        />
+                                    </figure>
+                                    <figcaption class="testimonal-item__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </div>
+                                <p class="testimonal-item__desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </li>
+
+                            <!-- Testimonal item 5 -->
+                            <li class="testimonal-item">
+                                <blockquote
+                                    class="testimonal-item__quote section-desc"
+                                >
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="testimonal-item__media">
+                                    <figure class="testimonal-item__img">
+                                        <img
+                                            src="./assets/img/testimonal-01.svg"
+                                            alt=""
+                                            class="testimonal-item__avatar"
+                                        />
+                                    </figure>
+                                    <figcaption class="testimonal-item__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </div>
+                                <p class="testimonal-item__desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </li>
+                        </ul>
+
+                        <!-- Dots -->
+                        <div class="testimonal__dots">
+                            <div class="testimonal__dot"></div>
+                            <div class="testimonal__dot"></div>
+                            <div
+                                class="testimonal__dot testimonal__dot--active"
+                            ></div>
+                            <div class="testimonal__dot"></div>
+                            <div class="testimonal__dot"></div>
                         </div>
                     </div>
                 </div>

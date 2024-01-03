@@ -31,6 +31,11 @@ body {
     max-width: 1330px;
 }
 
+.no-wrap {
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
 /* Common */
 a {
     text-decoration: none;
@@ -806,4 +811,41 @@ article {
 
 .faq-item__icon--active {
     display: none;
+}
+
+/* Gallery */
+.gallery {
+    padding: 160px 0 140px;
+}
+
+.gallery-content {
+    text-align: center;
+}
+
+.gallery__desc {
+    margin: 20px auto 0;
+    width: 528px;
+}
+
+.gallery__mail {
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    text-decoration-line: underline;
+}
+
+/* Galery list */
+.galery-list {
+    margin-top: 70px;
+    flex-wrap: nowrap;
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
 }

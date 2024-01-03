@@ -77,7 +77,7 @@ article {
 
 .section-heading {
     color: var(--second-primary-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section-heading.lv1 {
@@ -704,4 +704,106 @@ article {
     outline: 1px solid var(--primary-color);
     outline-offset: 4px;
     cursor: default;
+}
+
+/* FAQ */
+.faq {
+    padding-top: 95px;
+    background: #fff;
+}
+
+.faq__heading {
+    width: 580px;
+    transition: 0.25s;
+}
+
+.faq__list {
+    margin-top: 60px;
+    width: 1000px;
+}
+
+.faq-item {
+    border-bottom: 2px solid #08182f;
+    transition: 0.25s;
+}
+
+.faq-item:first-child .faq-item__wrap {
+    padding-top: 20px;
+    transition: 0.25s;
+}
+
+.faq__input {
+    display: none;
+}
+
+.faq__input:checked + .faq-item__wrap {
+    padding: 20px 0 21px 22px;
+}
+
+.faq__input:checked + .faq-item__wrap .faq-item__heading {
+    color: var(--primary-color);
+}
+
+.faq__input:checked + .faq-item__wrap .faq-item__desc {
+    height: 100%;
+    opacity: 1;
+}
+
+.faq__input:checked + .faq-item__wrap .faq-item__btn {
+    color: var(--primary-color);
+    border-color: rgb(93 59 238 / 20%);
+    cursor: default;
+}
+
+.faq__input:checked + .faq-item__wrap .faq-item__icon {
+    display: none;
+}
+
+.faq__input:checked + .faq-item__wrap .faq-item__icon--active {
+    display: block;
+}
+
+.faq-item__wrap {
+    padding: 60px 0 11px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: linear 0.25s;
+}
+
+.faq-item__desc {
+    margin-top: 23px;
+    width: 487px;
+    height: 0;
+    opacity: 0;
+}
+
+.faq-item__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(22 26 28 / 20%);
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.faq-item__btn:hover {
+    border-color: rgb(93 59 238 / 20%);
+}
+
+.faq-item__btn:hover .faq-item__icon {
+    stroke: var(--primary-color);
+}
+
+.faq-item__icon {
+    stroke: #161a1c;
+}
+
+.faq-item__icon--active {
+    display: none;
 }

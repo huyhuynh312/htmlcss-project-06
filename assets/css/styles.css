@@ -548,6 +548,7 @@ article {
 .about-media {
     position: relative;
     margin-top: 70px;
+    z-index: 1;
 }
 
 .about__video {
@@ -607,9 +608,28 @@ article {
 
 /* Testimonal */
 .testimonal {
+    position: relative;
     padding: 473px 0 74px;
     margin-top: -323px;
     background: #fbfaff;
+}
+
+.testimonal::before,
+.testimonal::after {
+    display: block;
+    position: absolute;
+}
+
+.testimonal::before {
+    content: url(../img/testimonal-decor-01.png);
+    left: 0;
+    bottom: 0;
+}
+
+.testimonal::after {
+    content: url(../img/testimonal-decor-02.png);
+    right: 0;
+    bottom: 0;
 }
 
 .testimonal__inner {
@@ -843,9 +863,19 @@ article {
     flex-wrap: nowrap;
 }
 
+.gallery__media {
+    overflow: hidden;
+}
+
 .gallery__img {
     display: block;
     width: 100%;
     height: 530px;
     object-fit: cover;
+}
+
+.gallery__img:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+    box-shadow: 0px 40px 50px 0px rgba(0, 0, 0, 0.07);
 }

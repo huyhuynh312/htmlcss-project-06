@@ -96,26 +96,31 @@
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- PC Header -->
         <header class="header header__fixed">
             <div id="header-inner" class="container container--large">
                 <div class="header__inner">
                     <!-- Header contact -->
                     <article class="header-contact">
-                        <figure class="header-contact__img">
-                            <img
-                                src="./assets/img/header-01.svg"
-                                alt="hi@arif.interactive"
-                                class="header-contact__thumb"
-                            />
-                        </figure>
-                        <a
-                            href="mailto:hi@arif.interactive"
-                            class="header-contact__mail"
-                        >
-                            hi@arif.interactive
+                        <a href="mailto:hi@arif.interactive">
+                            <figure class="header-contact__img">
+                                <img
+                                    src="./assets/img/header-01.svg"
+                                    alt="hi@arif.interactive"
+                                    class="header-contact__thumb"
+                                />
+                            </figure>
+                            <a
+                                href="mailto:hi@arif.interactive"
+                                class="header-contact__mail"
+                            >
+                                hi@arif.interactive
+                            </a>
                         </a>
                     </article>
 
@@ -128,9 +133,35 @@
                         />
                     </a>
 
+                    <!-- Tablet/Mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            width="17"
+                            height="8"
+                            viewBox="0 0 17 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1 7H16"
+                                stroke="#5D3BEE"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M1 1H16"
+                                stroke="#5D3BEE"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Nav -->
                     <nav class="navbar">
-                        <ul class="navbar__list">
+                        <ul id="pc-nav" class="navbar__list">
                             <li>
                                 <a href="#work" class="navbar__link">
                                     Projects
@@ -157,6 +188,32 @@
             </div>
         </header>
 
+        <!-- Tablet/Mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="/">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt=""
+                        class="mobile__logo"
+                    />
+                </a>
+
+                <div id="mobile-nav"></div>
+            </div>
+        </header>
+
         <main>
             <!-- Hero -->
             <section class="hero">
@@ -169,6 +226,12 @@
                                     src="./assets/img/hero-01.svg"
                                     alt=""
                                     class="hero__img"
+                                />
+
+                                <img
+                                    src="./assets/img/hero-decor-01.png"
+                                    alt=""
+                                    class="hero__decor"
                                 />
                             </figure>
                         </div>
@@ -356,7 +419,7 @@
             </section>
 
             <!-- Service -->
-            <section class="service">
+            <section id="service" class="service">
                 <div class="container">
                     <div class="row">
                         <!-- Service top -->
@@ -374,7 +437,7 @@
 
                     <!-- Service list -->
                     <div class="service__list">
-                        <div class="row row-cols-lg-3">
+                        <div class="row row-cols-lg-3 row-cols-1">
                             <div class="col">
                                 <!-- Service  item 1 -->
                                 <article class="service-item">
@@ -443,6 +506,12 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="service__dots dots">
+                        <div class="dot"></div>
+                        <div class="dot dot--active"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </section>
 
@@ -452,14 +521,14 @@
                     <!-- Work top -->
                     <div class="work-top">
                         <div class="row">
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 col-12">
                                 <h2 class="work__heading section-heading lv1">
                                     Take a look at
                                     <br />
                                     my recent projects
                                 </h2>
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-7 col-12">
                                 <p class="work__desc section-desc">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
@@ -471,7 +540,7 @@
 
                     <!-- Work bottom -->
                     <div class="work-bottom">
-                        <div class="row row-cols-lg-2">
+                        <div class="row row-cols-lg-2 row-cols-1">
                             <div class="col">
                                 <!-- Work item 1 -->
                                 <article class="work-item">
@@ -503,6 +572,12 @@
                                             />
                                         </a>
                                     </figure>
+
+                                    <img
+                                        src="./assets/img/work-decor-mobile.png"
+                                        alt=""
+                                        class="work-item__decor show-on-mobile"
+                                    />
                                 </article>
                             </div>
                             <div class="col">
@@ -536,12 +611,18 @@
                                             />
                                         </a>
                                     </figure>
+
+                                    <img
+                                        src="./assets/img/work-decor-mobile.png"
+                                        alt=""
+                                        class="work-item__decor show-on-mobile"
+                                    />
                                 </article>
                             </div>
                         </div>
 
                         <div class="work-bottom__2">
-                            <div class="row row-cols-lg-2">
+                            <div class="row row-cols-lg-2 row-cols-1">
                                 <div class="col">
                                     <!-- Work item 3 -->
                                     <article class="work-item">
@@ -575,6 +656,12 @@
                                                 />
                                             </a>
                                         </figure>
+
+                                        <img
+                                            src="./assets/img/work-decor-mobile.png"
+                                            alt=""
+                                            class="work-item__decor show-on-mobile"
+                                        />
                                     </article>
                                 </div>
 
@@ -611,6 +698,12 @@
                                                 />
                                             </a>
                                         </figure>
+
+                                        <img
+                                            src="./assets/img/work-decor-mobile.png"
+                                            alt=""
+                                            class="work-item__decor show-on-mobile"
+                                        />
                                     </article>
                                 </div>
                             </div>
@@ -863,21 +956,33 @@
                         </ul>
 
                         <!-- Dots -->
-                        <div class="testimonal__dots">
-                            <div class="testimonal__dot"></div>
-                            <div class="testimonal__dot"></div>
-                            <div
-                                class="testimonal__dot testimonal__dot--active"
-                            ></div>
-                            <div class="testimonal__dot"></div>
-                            <div class="testimonal__dot"></div>
+                        <div class="testimonal__dots dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot dot--active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
+                    </div>
+
+                    <!-- Testimonal decor -->
+                    <div class="testimonal-decor">
+                        <img
+                            src="./assets/img/testimonal-decor-01.png"
+                            alt=""
+                            class="testimonal-decor__img"
+                        />
+                        <img
+                            src="./assets/img/testimonal-decor-02.png"
+                            alt=""
+                            class="testimonal-decor__img-2"
+                        />
                     </div>
                 </div>
             </section>
 
             <!-- FAQ -->
-            <section id="service" class="faq">
+            <section class="faq">
                 <div class="container">
                     <h2 class="faq__heading section-heading lv1">
                         A few questions
@@ -1178,7 +1283,7 @@
                     </div>
 
                     <!-- Gallery list -->
-                    <div class="galery-list">
+                    <div class="gallery-list">
                         <div class="row row-cols-lg-3 row-cols-1 no-wrap">
                             <div class="col">
                                 <!-- Gallery item 1 -->
@@ -1246,11 +1351,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Dots -->
+                    <div class="gallery__dots dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot dot--active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </section>
 
             <!-- CTA -->
-            <div class="container container--large">
+            <div class="container container--large cta-wrap">
                 <section id="contact" class="cta">
                     <img
                         src="./assets/icon/smile.png"
@@ -1266,15 +1380,59 @@
                     </p>
                     <a href="#!" class="btn cta__btn">Book a Call</a>
 
-                    <img
-                        src="./assets/img/testimonal-decor-01.png"
-                        alt=""
-                        class="cta__decor"
-                    />
+                    <!-- CTA Decor -->
+                    <div class="cta-decor">
+                        <img
+                            src="./assets/img/testimonal-decor-01.png"
+                            alt=""
+                            class="cta-decor__img"
+                        />
+                        <img
+                            src="./assets/img/cta-decor-01.png"
+                            alt=""
+                            class="cta-decor__img-1"
+                        />
+                        <img
+                            src="./assets/img/cta-decor-02.png"
+                            alt=""
+                            class="cta-decor__img-2"
+                        />
+                    </div>
                 </section>
             </div>
         </main>
 
+        <!-- Footer mobile -->
+        <footer class="footer-mobile show-on-mobile">
+            <div class="container">
+                <a href="#">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt=""
+                        class="footer__logo"
+                    />
+                </a>
+                <div id="footer-nav"></div>
+
+                <article class="footer-contact">
+                    <a href="mailto:hi@arif.interactive">
+                        <figure class="header-contact__img">
+                            <img
+                                src="./assets/img/header-01.svg"
+                                alt="hi@arif.interactive"
+                                class="header-contact__thumb"
+                            />
+                        </figure>
+                        <a
+                            href="mailto:hi@arif.interactive"
+                            class="footer-contact__mail"
+                        >
+                            hi@arif.interactive
+                        </a>
+                    </a>
+                </article>
+            </div>
+        </footer>
         <!-- Footer -->
         <div class="container container--x-large">
             <footer class="footer">
@@ -1289,18 +1447,25 @@
                             ©interactiveArif 2021. All rights reserved.
                         </p>
                         <div class="copyright-policy">
-                            <div class="copyright-policy__desc section-desc">
+                            <a
+                                href="#!"
+                                class="copyright-policy__link section-desc"
+                            >
                                 Privacy Policy
-                            </div>
-                            <div class="copyright-policy__desc section-desc">
+                            </a>
+                            <a
+                                href="#!"
+                                class="copyright-policy__link section-desc"
+                            >
                                 Terms of Conditions
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </footer>
         </div>
 
+        <!-- Video -->
         <script>
             const playBtn = document.getElementById("play-btn");
             const video = document.getElementById("video");
@@ -1329,11 +1494,15 @@
                 intro.style.display = "none";
             });
         </script>
+
+        <!-- Footer PC copy -->
         <script>
             const footer = document.querySelector("#footer-inner");
             const header = document.querySelector("#header-inner");
             footer.innerHTML = header.innerHTML;
         </script>
+
+        <!-- Button radio click-->
         <script>
             function activateRadio(radioId) {
                 var radio = document.getElementById(radioId);
@@ -1342,6 +1511,16 @@
                     radio.checked = true;
                 }
             }
+        </script>
+
+        <!-- Mobile nav copy -->
+        <script>
+            const pcNav = document.querySelector("#pc-nav");
+            const mobileNav = document.querySelector("#mobile-nav");
+            const footerNav = document.querySelector("#footer-nav");
+
+            mobileNav.innerHTML = pcNav.innerHTML;
+            footerNav.innerHTML = pcNav.innerHTML;
         </script>
     </body>
 </html>

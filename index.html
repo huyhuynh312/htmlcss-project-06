@@ -100,7 +100,7 @@
     <body>
         <!-- Header -->
         <header class="header header__fixed">
-            <div class="container container--large">
+            <div id="header-inner" class="container container--large">
                 <div class="header__inner">
                     <!-- Header contact -->
                     <article class="header-contact">
@@ -132,16 +132,24 @@
                     <nav class="navbar">
                         <ul class="navbar__list">
                             <li>
-                                <a href="#!" class="navbar__link">Projects</a>
+                                <a href="#work" class="navbar__link">
+                                    Projects
+                                </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link">Journey</a>
+                                <a href="#about" class="navbar__link">
+                                    Journey
+                                </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link">Service</a>
+                                <a href="#service" class="navbar__link">
+                                    Service
+                                </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link">Contact</a>
+                                <a href="#contact" class="navbar__link">
+                                    Contact
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -439,7 +447,7 @@
             </section>
 
             <!-- Work -->
-            <section class="work">
+            <section id="work" class="work">
                 <div class="container">
                     <!-- Work top -->
                     <div class="work-top">
@@ -619,7 +627,7 @@
             </section>
 
             <!-- About -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <!-- About info -->
                     <div class="about-info">
@@ -869,7 +877,7 @@
             </section>
 
             <!-- FAQ -->
-            <section class="faq">
+            <section id="service" class="faq">
                 <div class="container">
                     <h2 class="faq__heading section-heading lv1">
                         A few questions
@@ -884,10 +892,10 @@
                             <input
                                 type="radio"
                                 name="faq"
-                                id="faq"
+                                id="faq-1"
                                 class="faq__input"
                             />
-                            <label for="faq" class="faq-item__wrap">
+                            <label for="faq-1" class="faq-item__wrap">
                                 <div class="faq-item__info">
                                     <h2
                                         class="faq-item__heading section-heading lv2"
@@ -900,7 +908,10 @@
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <button class="faq-item__btn">
+                                <button
+                                    onclick="activateRadio('faq-1')"
+                                    class="faq-item__btn"
+                                >
                                     <svg
                                         width="15"
                                         height="15"
@@ -950,7 +961,10 @@
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <button class="faq-item__btn">
+                                <button
+                                    onclick="activateRadio('faq-2')"
+                                    class="faq-item__btn"
+                                >
                                     <svg
                                         width="15"
                                         height="15"
@@ -1000,7 +1014,10 @@
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <button class="faq-item__btn">
+                                <button
+                                    onclick="activateRadio('faq-3')"
+                                    class="faq-item__btn"
+                                >
                                     <svg
                                         width="15"
                                         height="15"
@@ -1050,7 +1067,10 @@
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <button class="faq-item__btn">
+                                <button
+                                    onclick="activateRadio('faq-4')"
+                                    class="faq-item__btn"
+                                >
                                     <svg
                                         width="15"
                                         height="15"
@@ -1100,7 +1120,10 @@
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <button class="faq-item__btn">
+                                <button
+                                    onclick="activateRadio('faq-5')"
+                                    class="faq-item__btn"
+                                >
                                     <svg
                                         width="15"
                                         height="15"
@@ -1228,7 +1251,7 @@
 
             <!-- CTA -->
             <div class="container container--large">
-                <section class="cta">
+                <section id="contact" class="cta">
                     <img
                         src="./assets/icon/smile.png"
                         alt=""
@@ -1251,6 +1274,33 @@
                 </section>
             </div>
         </main>
+
+        <!-- Footer -->
+        <div class="container container--x-large">
+            <footer class="footer">
+                <div class="container container--large">
+                    <div id="footer-inner" class="footer-inner"></div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="container">
+                    <div class="copyright">
+                        <p class="copyright__text section-desc">
+                            ©interactiveArif 2021. All rights reserved.
+                        </p>
+                        <div class="copyright-policy">
+                            <div class="copyright-policy__desc section-desc">
+                                Privacy Policy
+                            </div>
+                            <div class="copyright-policy__desc section-desc">
+                                Terms of Conditions
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
         <script>
             const playBtn = document.getElementById("play-btn");
             const video = document.getElementById("video");
@@ -1278,6 +1328,20 @@
                 playBtn.style.display = "none";
                 intro.style.display = "none";
             });
+        </script>
+        <script>
+            const footer = document.querySelector("#footer-inner");
+            const header = document.querySelector("#header-inner");
+            footer.innerHTML = header.innerHTML;
+        </script>
+        <script>
+            function activateRadio(radioId) {
+                var radio = document.getElementById(radioId);
+
+                if (radio) {
+                    radio.checked = true;
+                }
+            }
         </script>
     </body>
 </html>

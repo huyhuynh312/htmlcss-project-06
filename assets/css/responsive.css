@@ -242,7 +242,7 @@
 
     /* FAQs */
     .faq__list {
-        width: auto;
+        width: 100%;
     }
 
     /* Gallery */
@@ -546,7 +546,7 @@
 
     .faq-item__desc {
         margin-top: 15px;
-        width: 316px;
+        width: 100%;
     }
 
     .faq-item__btn {
@@ -614,7 +614,6 @@
         display: flex;
         justify-content: space-between;
         list-style: none;
-        column-gap: 38px;
     }
 
     .footer-contact {

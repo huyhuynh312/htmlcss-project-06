@@ -833,8 +833,8 @@ label {
     border-radius: 50%;
     border: 2px solid rgb(22 26 28 / 20%);
     background: #fff;
-    outline: none;
     cursor: pointer;
+    transition: linear 0.25s;
 }
 
 .faq-item__btn:hover {
@@ -842,11 +842,11 @@ label {
 }
 
 .faq-item__btn:hover .faq-item__icon {
-    stroke: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .faq-item__icon {
-    stroke: #161a1c;
+    color: #161a1c;
 }
 
 .faq-item__icon--active {
